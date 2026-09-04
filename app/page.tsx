@@ -42,6 +42,8 @@ const products = [
   },
 ];
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function Home() {
   const [active, setActive] = useState("top");
 
@@ -167,7 +169,7 @@ export default function Home() {
               {product.image ? (
                 <div className="icon-specimen">
                   <div className="specimen-label"><span>Product icon</span><b>{product.name}</b></div>
-                  <img src={product.image} alt={`${product.name} app icon`} />
+                  <img src={`${basePath}${product.image}`} alt={`${product.name} app icon`} />
                   <div className="crop-marks" aria-hidden="true"><i /><i /><i /><i /></div>
                 </div>
               ) : (
