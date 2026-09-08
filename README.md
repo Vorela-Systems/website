@@ -1,28 +1,10 @@
 # Vorela Systems
 
-The official company website for [Vorela Systems](https://github.com/Vorela-Systems), presenting three focused products:
+The Vorela Systems company website: three product chapters with a dark theme and scroll-driven parallax.
 
-Live website: [vorela-systems.github.io/website](https://vorela-systems.github.io/website/)
+- Current website: `main`
+- Previous website: [v1](https://github.com/Vorela-Systems/website/tree/v1)
 
-- [BrushAlarm](https://github.com/Vorela-Systems/BrushAlarm) — an iOS alarm that verifies a brushing routine on-device.
-- [SpecVault](https://github.com/Vorela-Systems/SpecVault) — a local-first replacement-spec vault for household items.
-- [TradeSpace](https://github.com/Vorela-Systems/TradeSpace) — a transparent engineering trade-study workspace.
+Run locally with `python3 -m http.server 3011 --bind 127.0.0.1` and open http://localhost:3011.
 
-## Local development
-
-Requires Node.js 22.13 or newer.
-
-```bash
-npm install
-npm run dev
-```
-
-For a production build:
-
-```bash
-npm run build
-```
-
-## Design direction
-
-The site uses a technical field-notes register inspired by TradeSpace: cool paper tones, brick-red signal accents, compact system typography, numbered product sections, and restrained scroll parallax. Motion is disabled automatically when reduced motion is preferred.
+`npm run build` copies the static website into `out/` for the existing hosting integrations. No dependencies are required.

@@ -1,31 +1,7 @@
 {
   "name": "vorela-systems-website",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
-  "engines": {
-    "node": ">=22.13.0"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "oxlint",
-    "format": "oxfmt"
-  },
-  "dependencies": {
-    "next": "16.1.6",
-    "react": "19.2.6",
-    "react-dom": "19.2.6",
-    "lucide-react": "1.31.0"
-  },
-  "devDependencies": {
-    "@types/node": "22.19.19",
-    "@types/react": "19.2.14",
-    "@types/react-dom": "19.2.3",
-    "oxfmt": "0.61.0",
-    "oxlint": "1.76.0",
-    "oxlint-tsgolint": "7.0.2001",
-    "typescript": "5.9.3"
-  },
-  "type": "module"
+  "type": "module",
+  "scripts": { "build": "node build.mjs" }
 }
